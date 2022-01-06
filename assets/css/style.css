@@ -30,9 +30,12 @@ header {
 }
 
 header h1 {
-    color: var(--);
     margin: 0;
-    display: inline;
+}
+
+/* the below class is not moving "HOME" to left side */
+.align-left {
+    float: left;
 }
 
 header a {
@@ -57,13 +60,23 @@ header nav ul li a {
     display: inline;
 }
 
+
 /* Portfolio Section Begins */
 
 
 /* About Me Section Begins */
+.about-me {
+    font-size: 16px;
+}
+
 .about-me img {
     width: 220px;
     height: 350px; 
+}
+
+.about-me h3 {
+    font-weight: bold;
+    font-size: 20px;
 }
 
 /* Contact Me Section Begins */
