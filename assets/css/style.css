@@ -1,0 +1,104 @@
+:root {
+    --purple: #C8A2C8;
+    --dark-purple: #301934;
+    --grey: #D3D3D3;
+    --ocean: #1ed2ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--dark-purple);
+    background-color: var(--purple);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header and Navigation Styles Begin */
+header {
+    background-image: url("../images/plants.jpg");
+    background-size: cover;
+    opacity: 0.5;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: var(--);
+    margin: 0;
+    display: inline;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header nav {
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--dark-purple);
+    float: right;
+    margin: 10px 0;
+}
+
+header nav ul li {
+    list-style: none;
+    display: inline;
+}
+
+header nav ul li a {
+    padding: 15px 10px;
+    display: inline;
+}
+
+/* Portfolio Section Begins */
+
+
+/* About Me Section Begins */
+.about-me img {
+    width: 220px;
+    height: 350px; 
+}
+
+/* Contact Me Section Begins */
+.contact-form {
+    border: 2px solid var(--ocean);
+    background-color: var(--ocean);''
+    background-size: cover;
+    opacity: 0.5;
+
+}
+
+.contact-form h3 {
+    font-size: 19px;
+    color: #fff;
+    font-weight: bolder;
+
+}
+
+.contact-form p
+
+/* Footer Styles Begin */
+footer {
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer span {
+    color: red;
+}
+
+.bg-img {
+    background-image: url("../images/plants.jpg");
+    background-size: cover;
+    opacity: 0.5;
+    color: (var--ocean);
+}
