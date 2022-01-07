@@ -14,22 +14,24 @@ body {
     color: var(--dark-purple);
     background-color: var(--purple);
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+
 }
 
 /* Header and Navigation Styles Begin */
 header {
-    background-image: url("../images/plants.jpg");
-    background-size: cover;
-    opacity: 0.5;
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    z-index: 999;
+    padding: 15px 10px;
+}
+
+.bg-img {
+    background-image: url("../images/plants.jpg");
+    background-size: 100vw;
+    opacity: 0.5;
+    position: -webkit-sticky;
+    position: sticky;
 }
 
 header h1 {
@@ -124,12 +126,14 @@ header nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 50px;
 }
 
 .about-me h2 {
     color: white;
     display: flex;
     font-size: 25px;
+    margin-left: 7px;
 }
 
 .about-me img {
@@ -197,6 +201,10 @@ form.contact-form {
     box-sizing: border-box;
 }
 
+.contact-form input:focus {
+    outline: none;
+}
+
 .contact-form button {
     font-size: 15px;
     margin-left: 40%;
@@ -223,13 +231,6 @@ footer {
 
 footer span {
     color: red;
-}
-
-.bg-img {
-    background-image: url("../images/plants.jpg");
-    background-size: cover;
-    opacity: 0.5;
-    color: (var--ocean);
 }
 
 /* Media Queries Begin */
