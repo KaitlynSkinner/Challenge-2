@@ -14,6 +14,8 @@ body {
     color: var(--dark-purple);
     background-color: var(--purple);
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* Header and Navigation Styles Begin */
@@ -27,13 +29,13 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    z-index: 999;
 }
 
 header h1 {
     margin: 0;
 }
 
-/* the below class is not moving "HOME" to left side */
 .align-left {
     float: left;
 }
@@ -62,42 +64,66 @@ header nav ul li a {
 
 
 /* Portfolio Section Begins */
-.my-project {
-    
+#PORTFOLIO {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
 
-.my-project h2{
+.my-portfolio h2{
     color: var(--grey);
+    margin: 25px auto 40px auto;
 }
 
 .current-project img {
-    width: 320px;
-    height: 570px; 
+    width: 220px;
+    height: 370px; 
+    margin-right: 40px;
 }
 
-.current-project a {
+.last-project img {
+    width: 180px;
+    height: 330px; 
+    margin-left: 40px;
+}
 
+.find-me h3 {
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+.find-me ul {
+    font-size: 15px;
+    list-style: none;
+    margin-bottom: 40px;
 }
 
 /* About Me Section Begins */
 .about-me {
     font-size: 16px;
+    background-color: var(--grey);
+    color: var(--purple);
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    color: var(--grey);
 }
 
 .about-me h2 {
     color: white;
+    display: flex
 }
 
 .about-me img {
     width: 220px;
     height: 350px; 
+    border-radius: 50%;
 }
 
 .about-me h3 {
     font-weight: bold;
     font-size: 20px;
+    color: var(--dark-purple);
 }
 
 .about-me p {
@@ -106,18 +132,21 @@ header nav ul li a {
 
 /* Contact Me Section Begins */
 .contact-section {
-    background: var(--grey);
+    background: var(--purple);
     padding: 20px 25px;
+    color: white;
+    display: inline-block;
 }
 
-.contact-section h3 p {
-    
+.contact-section p {
+    font-style: italic;
 }
 
 .contact-form {
     border: 2px solid var(--ocean);
     background-color: var(--ocean);
     opacity: 0.5;
+    display: block;
 }
 
 .contact-form input {
@@ -126,17 +155,14 @@ header nav ul li a {
     padding: 6px 15px;
     margin: 8px 0;
     box-sizing: border-box;
-    flex-wrap: wrap;
 }
 
 .contact-form h3 {
     font-size: 19px;
     font-weight: bolder;
+    margin: 0 auto;
 }
 
-.contact-form p {
-
-}
 /* Footer Styles Begin */
 footer {
     font-size: 16px;
