@@ -94,10 +94,18 @@ header nav ul li a {
     position: relative;
 }
 
+.title .current-project img:hover {
+    opacity: 0.5;
+}
+
 .last-project img {
     width: 180px;
     height: 330px; 
     margin-left: 10px;
+}
+
+.last-project img:hover {
+    opacity: 0.5;
 }
 
 .find-me {
@@ -126,6 +134,10 @@ header nav ul li a {
 .find-me-links a img {
     width: 100px;
     height: 80px;
+}
+
+.find-me a img:hover {
+    opacity: 0.5;
 }
 
 /* About Me Section Begins */
@@ -218,7 +230,7 @@ form.contact-form {
 
 .contact-form button {
     font-size: 15px;
-    margin-left: 40%;
+    margin-left: 30%;
     color: var(--dark-purple);
     background-color: var(--purple);
     border: none;
