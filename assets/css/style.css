@@ -93,6 +93,7 @@ header nav ul li a {
 }
 
 .find-me {
+    background-color: var(--purple);
     justify-content: space-around;
     align-items: center;
     display: flex;
