@@ -89,15 +89,31 @@ header nav ul li a {
     margin-left: 40px;
 }
 
-.find-me h3 {
-    font-size: 25px;
-    margin-top: 40px;
+.find-me {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
 }
 
-.find-me ul {
-    font-size: 15px;
+.find-me h3 {
+    font-size: 25px;
+    margin: 40px 0 10px 105px;
+}
+
+.find-me-links {
     list-style: none;
     margin-bottom: 40px;
+}
+
+.find-me-links li{
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.find-me-links a img {
+    width: 100px;
+    height: 80px;
 }
 
 /* About Me Section Begins */
@@ -214,4 +230,14 @@ footer span {
     background-size: cover;
     opacity: 0.5;
     color: (var--ocean);
+}
+
+/* Media Queries Begin */
+@media screen and (max-width: 980px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 575px) {
 }
