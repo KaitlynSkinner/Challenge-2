@@ -12,7 +12,6 @@
 
 body {
     color: var(--dark-purple);
-    background-color: var(--purple);
     font-family: Arial, Helvetica, sans-serif;
 
 }
@@ -67,6 +66,8 @@ header nav ul li a {
 
 /* Portfolio Section Begins */
 #PORTFOLIO {
+    background-color: var(--purple);
+    background-size: cover;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -236,9 +237,171 @@ footer span {
 /* Media Queries Begin */
 @media screen and (max-width: 980px) {
 }
+    .my-portfolio h2, .contact-section h3{
+        text-align: center;
+    }
 
-@media screen and (max-width: 768px) {
+    .about-me h2, h3, p {
+        flex: 100%;
+        justify-content: center;
+        padding: 10px 8px;        
+    }
+
+    .contact-section {
+        flex: 100%;
+        justify-content: center;
+        padding: 8px 6px; 
+    }
+
+    .contact-form input, label {
+        margin: 8px 5px 15px 55px;
+    }
+
+    .contact-form button {
+        
 }
 
+@media screen and (max-width: 768px) {
+    header h1, header nav, footer, footer span {
+        font-weight: lighter;
+        font-size: 17px;
+    }
+
+    header.bg-img {
+        padding: 15px 30px;
+    }
+
+    .my-portfolio h2, .find-me {
+        font-size: 17px;
+    }
+
+    .find-me h3 {
+        margin-right: 30px;
+    }
+
+    .current-project img {
+        width: 90px;
+        height: 220px; 
+        margin-right: 20px;
+    }
+
+    .last-project img {
+        width: 90px;
+        height: 220px; 
+        margin-left: 20px;
+    }
+
+    .about-me {
+        padding-right: 40px;
+        font-size: 15px;
+    }
+
+    .about-me h3 {
+        font-size: 17px;
+        margin-left: 2px;
+    }
+
+    .about-me img {
+        opacity: 0;
+    }
+
+    .contact-section h3 {
+        font-size: 17px;  
+    }
+
+    .contact-section p {
+        font-size: 15px;
+    }
+
+    .contact-form button {
+        margin-right: 60%;
+        color: var(--dark-purple);
+        background-color: var(--purple);
+    }
+
+    .contact-form button:hover {
+        color: var(--purple);
+        background-color: var(--dark-purple);
+    }
+
 @media screen and (max-width: 575px) {
+    header {
+        font-size: 17px;
+    }
+
+    header.bg-img {
+        padding: 5px 30px;
+    }
+
+    #PORTFOLIO {
+        background-color: var(--grey);
+    }
+
+    .my-portfolio h2{
+        color: var(--dark-purple);
+        text-align: center;
+    }
+
+    .find-me {
+    background-color: var(--grey);
+    }
+
+    .find-me-links a img {
+        width: 60px;
+        height: 40px;
+    }
+
+    .about-me {
+        background-color: var(--purple);
+    }
+
+    .about-me h2 {
+        color: var(--ocean);  
+        font-size: 16px;    
+    }
+
+    .about-me img {
+        opacity: 0;
+    }
+
+    .about-me h3 {
+        font-size: 16px;
+        margin-left: 1px;
+    }
+
+    .about-me p {
+        font-size: 14px;
+        margin-left: 1px;
+    }
+
+    .contact-section {
+        font-size: 16px;
+        color: var(--dark-purple);
+        background-color: var(--grey)
+    }
+
+    .contact-section h3 {
+        text-align: center;
+    }
+
+    .contact-form {
+        padding: 30px 35px 30px 35px;
+    }
+
+    .contact-form input {
+        font-size: 14px;
+        width: 50%;
+        padding: 5px 10px;
+        margin: 8px 5px 15px 45px;
+    }
+
+    .contact-form label {
+        font-size: 14px;
+        margin: 8px 5px 15px 45px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        margin-right: 80%;
+    }
 }
