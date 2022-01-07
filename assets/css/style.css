@@ -1,6 +1,6 @@
 :root {
     --purple: #C8A2C8;
-    --dark-purple: #301934;
+    --dark-purple: #710193;
     --grey: #D3D3D3;
     --ocean: #1ed2ff;
 }
@@ -74,6 +74,7 @@ header nav ul li a {
 .my-portfolio h2{
     color: var(--grey);
     margin: 25px auto 40px auto;
+    font-size: 25px;
 }
 
 .current-project img {
@@ -111,7 +112,8 @@ header nav ul li a {
 
 .about-me h2 {
     color: white;
-    display: flex
+    display: flex;
+    font-size: 25px;
 }
 
 .about-me img {
@@ -131,6 +133,13 @@ header nav ul li a {
 }
 
 /* Contact Me Section Begins */
+#CONTACT {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
 .contact-section {
     background: var(--purple);
     padding: 20px 25px;
@@ -138,29 +147,53 @@ header nav ul li a {
     display: inline-block;
 }
 
+.contact-section h3 {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
 .contact-section p {
     font-style: italic;
 }
 
+form.contact-form {
+    width: 40%;
+}
+
 .contact-form {
-    border: 2px solid var(--ocean);
+    border: 2px solid var(--dark-purple);
     background-color: var(--ocean);
     opacity: 0.5;
     display: block;
+    padding: 20px 25px 20px 25px;
+}
+
+.contact-form label {
+    color: var(--dark-purple);
+    margin: 8px 5px 15px 80px;
 }
 
 .contact-form input {
     display: list-item;
-    width: 40%;
+    width: 60%;
     padding: 6px 15px;
-    margin: 8px 0;
+    margin: 8px 5px 15px 80px;
     box-sizing: border-box;
 }
 
-.contact-form h3 {
-    font-size: 19px;
-    font-weight: bolder;
-    margin: 0 auto;
+.contact-form button {
+    font-size: 15px;
+    margin-left: 40%;
+    color: var(--dark-purple);
+    background-color: var(--purple);
+    border: none;
+    border-radius: 10px;
+    padding: 8px 12px;
+}
+
+.contact-form button:hover {
+    color: var(--purple);
+    background-color: var(--dark-purple);
 }
 
 /* Footer Styles Begin */
