@@ -31,5 +31,5 @@ Professional Portfolio - Deployed URL = https://kaitlynskinner.github.io/Challen
 Git Hub - Repository URL = https://github.com/KaitlynSkinner/Challenge-2.git
 
 ```md
-![Deployed Application](assets/images/Portfolio-Mock-Up.png)
+![Deployed Application](https://github.com/KaitlynSkinner/Challenge-2/blob/7c13a1642880946d79182293bc019bb83a329640/assets/images/Portfolio-Mock-Up.png?raw=true)
 ```
