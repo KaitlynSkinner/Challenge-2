@@ -273,10 +273,6 @@ footer span {
         margin: 8px 5px 15px 55px;
     }
 
-    .contact-form button {
-        
-}
-
 @media screen and (max-width: 768px) {
     header h1, header nav, footer, footer span {
         font-weight: lighter;
@@ -292,7 +288,7 @@ footer span {
     }
 
     .find-me h3 {
-        margin-right: 30px;
+        margin: 40px 0 10px 40px;
     }
 
     .about-me {
@@ -306,7 +302,9 @@ footer span {
     }
 
     .about-me img {
-        opacity: 0;
+        width: 100px;
+        height: 250px; 
+        border-radius: 80%;
     }
 
     .contact-section h3 {
@@ -367,6 +365,10 @@ footer span {
     background-color: var(--grey);
     }
 
+    .find-me h3 {
+        margin-right: 30px;
+    }
+
     .find-me-links a img {
         width: 60px;
         height: 40px;
@@ -383,7 +385,9 @@ footer span {
     }
 
     .about-me img {
-        opacity: 0;
+        width: 80px;
+        height: 130px; 
+        border-radius: 90%;
     }
 
     .about-me h3 {
