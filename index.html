@@ -4,63 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio</title>
+    <!-- Stylesheets -->
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Favicon.ico -->
+    <link rel="shortcut icon" href="./assets/images/favicon_io/favicon.ico" type="image/x-icon">
+    <!-- Personal Stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Kaitlyn Skinner - Web Developer</title>
 </head>
 
 <body>
    <!-- Header and Navigation -->
-   <header class="bg-img">
-       <h1 class="align-left">
-        <a href="#">
-            HOME
-        </a>
-       </h1>
-       <nav>
-           <ul>
-               <li>
-                   <a href="#PORTFOLIO">PORTFOLIO</a>
-               </li>
-               <li>
-                   <a href="#ABOUT">ABOUT</a>
-               </li>
-               <li>
-                   <a href="#CONTACT">CONTACT</a>
-               </li>
-           </ul>
-       </nav>
-   </header> 
-
-<!-- Porfolio Section -->
-   <section id="PORTFOLIO" class="my-portfolio">
-        <h2>PORTFOLIO</h2>
-        <div class="title">
-            <div class="title">
-                <span>Run Buddy Project</span>
-            <a class="current-project" href="https://kaitlynskinner.github.io/Module1-Project-Run-Buddy/" target="_blank"><img src="./assets/images/Current-Project.jpg" 
-            alt="Kaitlyn Skinner's current project" /></a>
-            <span>Horiseon Project</span>
-            <a class="last-project" href="https://kaitlynskinner.github.io/Challenge-1/" target="_blank"><img src="./assets/images/Horiseon-Website-Last-Project.jpg" 
-            alt="Kaitlyn Skinner's last project" /></a>
+    <div id="#TOP" class="pos-f-t">
+       <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+               <h5 class="text-white h4">Hello, my name is Kaitlyn Skinner</h5>
+               <span class="text-muted">Please click the buttons here to navigate my webpage!</span>
+            </div>
         </div>
-   </section>
+        <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <button class="btn btn-dark btn-lg nav-btns" onclick="location.href='#PORTFOLIO';">Projects</button>
+        <button class="btn btn-dark btn-lg nav-btns" onclick="location.href='#ABOUT';">About</button>
+        <button class="btn btn-dark btn-lg nav-btns" onclick="location.href='#CONTACT';">Contact</button>
+        </nav>
+    </div>
+    
+    <!-- Porfolio Section -->
+    <section id="PORTFOLIO" class="row my-portfolio">
+        <h2>PORTFOLIO</h2>
+        <div class="row completed-projects">
+            <!-- Run Buddy Project -->
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img" src="./assets/images/Run_Buddy.jpg" alt="Kaitlyn Skinner's Run Buddy Project">
+                    <div class="card-body">
+                        <a class="run-buddy-link" href="https://kaitlynskinner.github.io/Run_Buddy/"><strong class="card-title">Run Buddy</strong></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Refactor Code Challenge -->
+            <div id="m-t" class="col-sm-4">
+                <div class="card">
+                    <img class="card-img" src="./assets/images/Refactor_Code.jpg" alt="Kaitlyn Skinner's Horiseon Project">
+                    <div class="card-body">
+                        <a class="refactor-code-link" href="https://kaitlynskinner.github.io/Refactor_Code/"><strong class="card-title">Horiseon</strong></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Blue Leaf Sports - Project #1 -->
+            <div id="blueLeaf" class="col-sm-4">
+                <div class="card">
+                <img class="card-img" src="./assets/images/Mockup.jpg" alt="Kaitlyn Skinner's Horiseon Project">
+                <div class="card-body">
+                    <a class="blue-leaf-sports-link" href="https://kaitlynskinner.github.io/Blue_Leaf_Sports/"><strong class="card-title">Blue Leaf Sports</strong></a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-   <section class="find-me">
-       <div>
-        <h3>Find Me Elsewhere!</h3>
-           <ul class="find-me-links">
-               <li>
-                <a href="linkedin.com/in/kaitlyn-skinner-757b6a1b6/" target="_blank"><img src="./assets/images/LinkedInLogo.png" alt="LinkedIn" /></a>
-               </li>
-               <li>
-                <a href="https://stackexchange.com/users/23687213/kaitlyn-skinner/" target="_blank"><img src="./assets/images/StackOverflowLogo.png" alt="Stacked Overflow" /><a>
-               </li>
-               <li>
-                <a href="https://github.com/KaitlynSkinner/" target="_blank"><img src="./assets/images/GitHubLogo.png" alt="Git Hub" /></a>
-               </li>  
-            </ul>
-       </div>
-   </section>
+
 
 <!-- About Me Section -->  
 <section>
@@ -87,33 +94,64 @@
             Any device, anywhere!
         </p>
     </article>
-    <img src="./assets/images/Kaitlyn.jpeg" alt="" />
+    <img src="./assets/images/me1.JPG" alt="" />
     </div>
 </section>
 
+   <!-- Profile Links Section -->
+   <section class="find-me">
+       <div>
+        <h3>Find Me Elsewhere!</h3>
+           <ul class="find-me-links">
+               <li>
+                <a href="linkedin.com/in/kaitlyn-skinner-757b6a1b6/" target="_blank"><img src="./assets/images/LinkedInLogo.png" alt="LinkedIn" /></a>
+               </li>
+               <li>
+                <a href="https://stackexchange.com/users/23687213/kaitlyn-skinner/" target="_blank"><img src="./assets/images/StackOverflowLogo.png" alt="Stacked Overflow" /><a>
+               </li>
+               <li>
+                <a href="https://github.com/KaitlynSkinner/" target="_blank"><span class="iconify" data-icon="octicon:mark-github-16" style="color: white;" data-width="100" data-height="80"></span></a>
+               </li>  
+            </ul>
+       </div>
+   </section>
+
 <!-- Contact Me Section -->
-<div id="CONTACT" class="contact-section">
-    <h3>CONTACT</h3>
-    <p> Want to work together? Contact me today! </p>
-        <form class="contact-form">
-        <!-- Do I need the label section, eventually delete this to make it cleaner -->
-            <label for="name">Enter your name</label>
-            <input type="text" placeholder="Name" name="name" id="name" />
-            <label for="email">Enter your email address</label>
-            <input type="text" placeholder="Email" name="email" id="email" />
-            <label for="message">Write your Message</label>
-            <input type="text" placeholder="Your Message" name="message" id="message" />
-        <button type="Submit">SUBMIT</button>
+<div id="CONTACT" class="row d-flex form-group row contact-section">
+    <h2 class="col-sm-6">CONTACT</h2>
+    <p class="col-lg-9"> Want to work together? Contact me today! </p>
+        <form class="col-sm-6 contact-form">
+            <label for="name" class="col-sm-8 col-form-label">Enter your name</label>
+            <input type="text" placeholder="Name" name="name" class="form-control" id="name" />
+            <label for="email" class="col-sm-8 col-form-label">Enter your email address</label>
+            <input type="text" placeholder="Email" name="email" class="form-control" id="email" />
+            <label for="message" class="col-sm-8 col-form-label">Write your Message</label>
+            <input type="text" placeholder="Your Message" name="message" class="form-control" id="message" />
+            <button class="col-sm-4 mb-3" type="Submit">SUBMIT</button>
         </form>
 </div>
 
 <!-- Footer and Contact -->
-    <footer class="bg-img">
-        <div>
-            &copy; KAITLYN SKINNER <span>2022</span>
-        </div>
-    </footer>
-
+        <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+                 <div class="bg-dark p-4">
+                    <h5 class="text-white h4">&copy; KAITLYN SKINNER <span>2022</span> </h5>
+                    <span class="text-muted">Thank you for visiting!</span>
+                 </div>
+             </div>
+             <nav class="navbar navbar-dark bg-dark">
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <button class="btn btn-dark btn-lg nav-btns" onclick="location.href='#TOP';">Back to Top</button>
+             </nav>
+         </div>
+  <!-- JS Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- Iconify -->
+  <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>

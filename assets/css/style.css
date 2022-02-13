@@ -8,116 +8,143 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
+    background-image: url(../images/bg-img-3.jpeg);
+    background-size: cover;
     color: var(--dark-purple);
     font-family: Arial, Helvetica, sans-serif;
 
 }
 
 /* Header and Navigation Styles Begin */
-header {
-    top: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 15px 10px;
-}
-
-.bg-img {
-    background-image: url("../images/plants.jpg");
-    background-size: 100vw;
-    opacity: 0.5;
-    position: -webkit-sticky;
-    position: sticky;
-}
-
-header h1 {
-    margin: 0;
-}
-
-.align-left {
-    float: left;
-}
-
-header a {
+.nav-btns {
     text-decoration: none;
 }
 
-header nav {
-    font-weight: bold;
-    font-size: 25px;
-    color: var(--dark-purple);
-    float: right;
-    margin: 10px 0;
-}
-
-header nav ul li {
-    list-style: none;
-    display: inline;
-}
-
-header nav ul li a {
-    padding: 15px 10px;
-    display: inline;
-}
-
-
 /* Portfolio Section Begins */
 #PORTFOLIO {
-    background-color: var(--purple);
-    background-size: cover;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
 }
 
-.my-portfolio h2{
+.my-portfolio h2, h3 {
     color: var(--grey);
-    margin: 25px auto 40px auto;
     font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
 }
 
-.title span {
+.run-buddy, .blue-leaf-sports {
+    width: 150px;
+    height: 250px;
+}
+
+.refactor-code {
+    width: 150px;
+    height: 350px;
+}
+
+.run-buddy-link, .refactor-code-link, .blue-leaf-sports-link {
+    list-style: none;
+}
+
+ /* Float four columns side by side */
+ .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /*
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: grid;
+    clear: both;
+  }
+  */
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    opacity: 0.9;
+  }
+
+.card:hover {
+    opacity: 1;
+}
+
+  .card-title {
+    font-size: 25px;
     color: var(--dark-purple);
-    font-size: 25px;
-    position: absolute;
-}
-
-.title .current-project img {
+    text-decoration: none;
+  }
+  
+  #m-t {
     margin-top: 40px;
-    width: 220px;
-    height: 350px; 
-    margin-right: 40px;
-    position: relative;
+    margin-bottom: 50px;
+  }
+
+  .refactor-code {
+      height: 140%;
+  }
+
+/* About Me Section Begins */
+.about-me {
+    margin-top: 30px;
+    background-image: url(../images/plants.jpg);
+    opacity: 0.9;
+    font-size: 16px;
+    color: var(--purple);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px 5px 20px;
 }
 
-.title .current-project img:hover {
-    opacity: 0.5;
+.about-me h2 {
+    color: var(--grey);
+    display: flex;
+    font-size: 20px;
+    margin-left: 2px;
+    padding: 0;
 }
 
-.last-project img {
-    width: 180px;
-    height: 330px; 
-    margin-left: 10px;
+.about-me img {
+    width: 250px;
+    height: 340px; 
+    border-radius: 50%;
 }
 
-.last-project img:hover {
-    opacity: 0.5;
+.about-me h3 {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--purple);
 }
 
+.about-me p {
+    font-style: italic;
+}
+
+/* Find Me Section */
 .find-me {
-    background-color: var(--purple);
     justify-content: space-around;
     align-items: center;
     display: flex;
 }
 
 .find-me h3 {
+    color: var(--purple);
     font-size: 25px;
-    margin: 40px 0 10px 105px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .find-me-links {
@@ -132,7 +159,7 @@ header nav ul li a {
 }
 
 .find-me-links a img {
-    width: 100px;
+    width: 90px;
     height: 80px;
 }
 
@@ -140,88 +167,36 @@ header nav ul li a {
     opacity: 0.5;
 }
 
-/* About Me Section Begins */
-.about-me {
-    font-size: 16px;
-    background-color: var(--grey);
-    color: var(--purple);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 40px 5px 20px;
-}
-
-.about-me h2 {
-    color: white;
-    display: flex;
-    font-size: 20px;
-    margin-left: 2px;
-    padding: 0;
-}
-
-.about-me img {
-    width: 220px;
-    height: 350px; 
-    border-radius: 50%;
-}
-
-.about-me h3 {
-    font-weight: bold;
-    font-size: 20px;
-    color: var(--dark-purple);
-}
-
-.about-me p {
-    font-style: italic;
-}
-
 /* Contact Me Section Begins */
-#CONTACT {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-}
-
 .contact-section {
-    background: var(--purple);
-    padding: 20px 25px;
-    color: white;
-    display: inline-block;
+    background-image: url(../images/blacl-geo-bg.jpeg);
 }
 
-.contact-section h3 {
+.contact-section h2 {
+    color: var(--purple);
     font-size: 25px;
     font-weight: bolder;
+    text-align: center;
 }
 
 .contact-section p {
+    color: var(--purple);
     font-style: italic;
-}
-
-form.contact-form {
-    width: 40%;
+    text-align: center;
 }
 
 .contact-form {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border: 2px solid var(--dark-purple);
-    background-color: var(--ocean);
-    opacity: 0.5;
-    display: block;
-    padding: 20px 25px 20px 25px;
+    background-color: rgba(30, 210, 255, 0.5);
 }
 
 .contact-form label {
-    color: var(--dark-purple);
-    margin: 8px 5px 15px 80px;
+    color: var(--purple);
 }
 
 .contact-form input {
-    display: list-item;
-    width: 60%;
-    padding: 6px 15px;
-    margin: 8px 5px 15px 80px;
-    box-sizing: border-box;
+    width: 75%;
 }
 
 .contact-form input:focus {
@@ -230,12 +205,12 @@ form.contact-form {
 
 .contact-form button {
     font-size: 15px;
-    margin-left: 30%;
     color: var(--dark-purple);
     background-color: var(--purple);
     border: none;
     border-radius: 10px;
     padding: 8px 12px;
+    margin-left: 30%;
 }
 
 .contact-form button:hover {
