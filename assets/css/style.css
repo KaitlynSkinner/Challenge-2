@@ -118,8 +118,8 @@ body {
 }
 
 .about-me img {
-    width: 250px;
-    height: 340px; 
+    width: 160px;
+    height: 210px; 
     border-radius: 50%;
 }
 
@@ -276,8 +276,8 @@ footer span {
     }
 
     .about-me img {
-        width: 100px;
-        height: 250px; 
+        width: 60px;
+        height: 80px; 
         border-radius: 80%;
     }
 
@@ -290,7 +290,6 @@ footer span {
     }
 
     .contact-form button {
-        margin-right: 60%;
         color: var(--dark-purple);
         background-color: var(--purple);
     }
@@ -299,6 +298,7 @@ footer span {
         color: var(--purple);
         background-color: var(--dark-purple);
     }
+}
 
 @media screen and (max-width: 575px) {
     header {
@@ -359,8 +359,8 @@ footer span {
     }
 
     .about-me img {
-        width: 80px;
-        height: 130px; 
+        width: 60px;
+        height: 80px; 
         border-radius: 90%;
     }
 
