@@ -25,11 +25,6 @@ body {
 }
 
 /* Portfolio Section Begins */
-#PORTFOLIO {
-    display: flex;
-    justify-content: space-around;
-}
-
 a {
     color: inherit;
   }
@@ -188,21 +183,13 @@ a {
     height: 75%;
 }
 
-.my-portfolio h2, h3 {
+.my-portfolio h2 {
     color: var(--grey);
-    font-size: 25px;
+    font-size: 1em;
+    font-weight: normal;
     margin-top: 20px;
-    text-align: center;
-}
-
-.run-buddy, .blue-leaf-sports {
-    width: 150px;
-    height: 250px;
-}
-
-.refactor-code {
-    width: 150px;
-    height: 350px;
+    display: flex;
+    padding: 1em 3em;
 }
 
 .run-buddy-link, .refactor-code-link, .blue-leaf-sports-link {
