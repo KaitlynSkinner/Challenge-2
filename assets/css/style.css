@@ -26,9 +26,9 @@ body {
 /* Portfolio Section Begins */
 a {
     color: inherit;
-  }
+}
   
-  .cards-wrapper {
+.cards-wrapper {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -37,9 +37,9 @@ a {
     padding: 4rem;
     margin: 0 auto;
     width: max-content;
-  }
+}
   
-  .card {
+.card {
     font-family: 'Heebo';
     --bg-filter-opacity: 0.5;
     background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
@@ -60,30 +60,30 @@ a {
     overflow: hidden;
     border: 10px solid #ccc;
     text-decoration: none;
-  }
+}
   
-  .card:hover {
+.card:hover {
     transform: rotate(0);
-  }
+}
   
-  .card h1 {
+.card h1 {
     margin: 0;
     font-size: 1.5em;
     line-height: 1.2em;
-  }
+}
   
-  .card p {
+.card p {
     font-size: 0.75em;
     font-family: 'Open Sans';
     margin-top: 0.5em;
     line-height: 2em;
-  }
+}
   
-  .card .tags {
+.card .tags {
     display: flex;
-  }
+}
   
-  .card .tags .tag {
+.card .tags .tag {
     font-size: 0.75em;
     background: rgba(255,255,255,0.5);
     border-radius: 0.3rem;
@@ -91,14 +91,14 @@ a {
     margin-right: 0.5em;
     line-height: 1.5em;
     transition: all, var(--transition-time);
-  }
+}
   
-  .card:hover .tags .tag {
+.card:hover .tags .tag {
     background: var(--color);
     color: white;
-  }
+}
   
-  .card .date {
+.card .date {
     position: absolute;
     top: 0;
     right: 0;
@@ -106,9 +106,9 @@ a {
     padding: 1em;
     line-height: 1em;
     opacity: .8;
-  }
+}
   
-  .card:before, .card:after {
+.card:before, .card:after {
     content: '';
     transform: scale(0);
     transform-origin: top left;
@@ -119,53 +119,68 @@ a {
     z-index: -5;
     transition: all, var(--transition-time);
     transition-timing-function: ease-in-out;
-  }
+}
   
-  .card:before {
+.card:before {
     background: #ddd;
     width: 250%;
     height: 250%;
-  }
+}
   
-  .card:after {
+.card:after {
     background: white;
     width: 200%;
     height: 200%;
-  }
+}
   
-  .card:hover {
+.card:hover {
     color: var(--color);
-  }
+}
   
-  .card:hover:before, .card:hover:after {
+.card:hover:before, .card:hover:after {
     transform: scale(1);
-  }
+}
   
-  .card-grid-space .num {
+.card-grid-space .num {
     font-size: 3em;
     margin-bottom: 1.2rem;
     margin-left: 1rem;
     color: var(--grey);
-  }
+}
   
-  .info {
+.info {
     font-size: 1.2em;
     display: flex;
     padding: 1em 3em;
     height: 3em;
     color: var(--grey);
-  }
+}
   
-  .info img {
+.info img {
     height: 3em;
     margin-right: 0.5em;
-  }
-  
-  .info h1 {
+}
+
+.info h1 {
     font-size: 1em;
     font-weight: normal;
-  }
-  
+}
+
+.num-one {
+    background-image: url("../images/lines-of-code.jpeg");
+}
+
+.num-two {
+    background-image: url("../images/coding_woman.jpeg");
+}
+
+.num-three {
+    background-image: url("../images/scheduler.jpeg");
+}
+
+.num-four {
+    background-image: url("../images/blue_web_theme.jpeg");
+}
 
 .p-img-one {
     width:90%;
@@ -214,23 +229,6 @@ a {
   }
   */
   /* Style the counter cards */
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    opacity: 0.9;
-  }
-
-.card:hover {
-    opacity: 1;
-}
-
-  .card-title {
-    font-size: 25px;
-    color: var(--dark-purple);
-    text-decoration: none;
-  }
-  
   #m-t {
     margin-top: 40px;
     margin-bottom: 50px;
