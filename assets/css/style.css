@@ -14,7 +14,6 @@
 body {
     background-image: url(../images/bg-img-3.jpeg);
     background-size: cover;
-    color: var(--dark-purple);
     font-family: Arial, Helvetica, sans-serif;
 
 }
@@ -169,7 +168,7 @@ a {
   
 
 .p-img-one {
-    width:234%;
+    width:90%;
     height:35%;
 }
 
@@ -252,10 +251,11 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 5px 40px 5px 20px;
+    width: 100%;
 }
 
 .about-me h2 {
-    color: var(--grey);
+    color: var(--dark-purple);
     display: flex;
     font-size: 20px;
     margin-left: 2px;
@@ -387,7 +387,6 @@ footer span {
     }
 
     .contact-section {
-        flex: 100%;
         justify-content: center;
         padding: 8px 6px; 
     }
