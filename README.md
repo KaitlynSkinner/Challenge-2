@@ -26,8 +26,8 @@ Contact the developer in the provided Contact Form.
 
 ## Deployed Application
 
-Professional Portfolio - Deployed URL = https://kaitlynskinner.github.io/Challenge-2/
+Professional Portfolio - Deployed URL = https://kaitlynskinner.github.io/Personal_Portfolio/
 
-Git Hub - Repository URL = https://github.com/KaitlynSkinner/Challenge-2.git
+Git Hub - Repository URL = https://github.com/KaitlynSkinner/Personal_Portfolio.git
 
-![Deployed Application](https://github.com/KaitlynSkinner/Challenge-2/blob/1f9cf217d8a45cd8bd1d75e136188ccc671c4f0e/assets/images/Portfolio-Mock-Up.png?raw=true)
+![Deployed Application](https://github.com/KaitlynSkinner/Personal_Portfolio/blob/1f9cf217d8a45cd8bd1d75e136188ccc671c4f0e/assets/images/Portfolio-Mock-Up.png?raw=true)
