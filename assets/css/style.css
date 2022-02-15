@@ -403,6 +403,10 @@ footer span {
         padding: 15px 30px;
     }
 
+    .my-portfolio {
+        margin-left: 10%;
+    }
+
     .cards-wrapper {
         grid-template-columns: 1fr;
     }
