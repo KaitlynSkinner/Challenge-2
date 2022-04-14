@@ -182,6 +182,10 @@ a {
     background-image: url("../images/blue_web_theme.jpeg");
 }
 
+.num-five {
+    background-image: url("../images/background.webp")
+}
+
 .p-img-one {
     width:90%;
     height:35%;
